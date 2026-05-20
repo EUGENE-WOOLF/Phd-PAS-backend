@@ -1,6 +1,6 @@
 MAIL:
-  HOST: ""
-  PORT: "25"
+  HOST: "mmtp.iitk.ac.in"
+  PORT: "465"
   BATCH: 200
 JWT:
   EXPIRATION:
