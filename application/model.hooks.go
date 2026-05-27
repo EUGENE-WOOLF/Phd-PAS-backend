@@ -54,8 +54,9 @@ func (p *Proforma) BeforeUpdate(tx *gorm.DB) (err error) {
 }
 
 // Set default eligibility to none
+// 22 chars = 1 unused index-0 + 21 departments (MSE..NET)
 func (p *Proforma) BeforeCreate(tx *gorm.DB) (err error) {
-	p.Eligibility = strings.Repeat("0", 130)
+	p.Eligibility = strings.Repeat("0", 22)
 	return
 }
 
